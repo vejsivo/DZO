@@ -2,7 +2,7 @@
 image_name = 'images/gantrycrane.png';  % path to real image or one of demo images: https://www.mathworks.com/matlabcentral/answers/54439-list-of-builtin-demo-images
 % list all operations to be tested as 'operation_name', 'param_value' (use [] if the op takes no params)
 operations_and_params = {'negative',            [];
-                         'threshold',           0.5;
+                         'threshold',           0.1;
                          'brightness_adj',      -0.3;
                          'gamma_correction',    0.5;
                          'contrast',            2;

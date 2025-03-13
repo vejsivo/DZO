@@ -89,9 +89,8 @@ function [lt] = quantization(l, q_levels)
 
     % number of levels = q
     %make mask in for loop that corresponds to concrete level
-    %add the level values to a zero matrix
-
-    lt = floor(l * q_levels)/q_levels;    
+    %add the 
+    
 end
 
 %% End of "TO BE IMPLEMENTED" functions. Don't change the function below.
