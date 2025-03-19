@@ -1,12 +1,8 @@
-function [img_cdf] = compute_cdf(img, intensity_levels)
-%COMPUTE_CDF Summary of this function goes here
-%   Detailed explanation goes here
-    if ~exist('intensity_levels', 'var')
+function [img_cdf] = compute_cdf(img, intensity_levels)    
+    if nargin < 2
         intensity_levels = 256;
     end
-    
-    % TODO - replace the line below with computation of the image CDF:
-    img_cdf = linspace(0, 1, intensity_levels);  % <= to be replaced
-    
-end
 
+    img_hist = compute_hist(img, intensity_levels);
+    img_cdf = cumsum(img_hist);
+end
